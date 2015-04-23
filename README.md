@@ -1,1 +1,1 @@
-Simple PKGBUILD to install nomachine NX# nomachine-pkgbuild
+Simple PKGBUILD to install nomachine NX
