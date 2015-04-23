@@ -1,6 +1,6 @@
 Simple PKGBUILD to install nomachine NX
 
-*Clone NoMachine NX*
+_*Clone NoMachine NX*_
 ```
 git clone git@github.com:ElectricPrism/nomachine-pkgbuild.git
 ```
