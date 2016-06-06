@@ -1,7 +1,7 @@
 # Maintainer: olav-st <olav.s.th@gmail.com>
 
 pkgname=nomachine
-pkgver=4.5.0
+pkgver=5.1.26
 pkgrel=1
 pkgdesc="Remote desktop application"
 url="http://www.nomachine.com"
@@ -11,14 +11,8 @@ options=('!strip')
 conflicts=('nxmanager nxwebplayer nxserver nxnode nxclient')
 install=nomachine.install
 
-if [ "${CARCH}" = "x86_64" ]; then
-  md5sums=('63226d45bdaa725eff24a46fb79e3d20')
-  _carch=_x86_64
-elif [ "${CARCH}" = "i686" ]; then
-  md5sums=('043ef999dc3bb49b95e664d1a7faba7b')
-  _carch=_i686
-fi
-source=("http://download.nomachine.com/download/4.5/Linux/${pkgname}_${pkgver}_${pkgrel}${_carch}.tar.gz")
+source_x86_64=("http://download.nomachine.com/download/${pkgver%.*}/Linux/${pkgname}_${pkgver}_1_x86_64.tar.gz")
+source_i686=("http://download.nomachine.com/download/${pkgver%.*}/Linux/${pkgname}_${pkgver}_1_i686.tar.gz")
 
 package()
 {
